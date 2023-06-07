@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="inp1"><br><br>
+    <input type="text" id="inp2"><br><br>
+
+    <button onclick="clkbtn()">clickme</button> <br><br>
+
+    <div id="result">
+
+
+
+
+    </div>
+
+
+    <script>
+       
+
+        let clkbtn = ()=> {
+
+            let m = document.getElementById("inp1").value;
+            let n = document.getElementById("inp2").value;
+            let ans = document.getElementById("result");
+            
+                    let sum = parseInt(0);
+                    let count =parseInt(0);
+
+
+            for (let i = m; i <= n; i++) {
+
+                if (i % 7 == 0) {
+                    
+                    // sum = sum + i;
+                    count++;
+
+
+
+                }
+               
+            }
+ans.innerHTML = "<h1>"+ count +"</h1>"
+
+document.getElementById("inp1").value = "";
+ document.getElementById("inp2").value = "";
+//  setTimeout(reset,2000);
+            
+
+        }
+
+  /* let reset= () => {
+    count= 0;
+document.getElementById("result").innerHTML = "";
+
+} */
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
