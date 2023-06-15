@@ -32,15 +32,29 @@
             let n = document.getElementById("inp2").value;
             let ans = document.getElementById("result");
             
-                    let sum = parseInt(0);
-                    let count =parseInt(0);
+        
+                    let count =0;
+
+
+if (m>n) {
+    const temp = m;
+    m = n ;
+    n = temp ;
+    
+}
+
+
+
+
+
+
+
 
 
             for (let i = m; i <= n; i++) {
 
                 if (i % 7 == 0) {
                     
-                    // sum = sum + i;
                     count++;
 
 
@@ -52,16 +66,12 @@ ans.innerHTML = "<h1>"+ count +"</h1>"
 
 document.getElementById("inp1").value = "";
  document.getElementById("inp2").value = "";
-//  setTimeout(reset,2000);
+
             
 
         }
 
-  /* let reset= () => {
-    count= 0;
-document.getElementById("result").innerHTML = "";
-
-} */
+ 
 
 
 
